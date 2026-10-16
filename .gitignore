@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+data/output/*.npy
+data/output/*.png
+data/output/neural_network.json
+!data/output/performance_report.json
+logs/*.log
+Отчет_Основы_нейронных_сетей.docx
