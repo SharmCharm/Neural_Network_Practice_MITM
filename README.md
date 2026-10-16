@@ -52,3 +52,11 @@ python -m app.performance --path ../data/input/images --output ../data/output/au
 - `data/output/` — результаты команд.
 
 Модель бинарного классификатора реализована на NumPy. TensorFlow и PyTorch для этой практической работы не требуются. `matplotlib` загружается только при выборе построения графика.
+
+## Автоматические проверки
+
+Из корневого каталога запустите:
+
+```powershell
+python -m unittest discover -s tests -v
+```

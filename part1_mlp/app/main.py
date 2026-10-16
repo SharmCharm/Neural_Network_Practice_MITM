@@ -39,7 +39,16 @@ def main():
                 path = input(
                     "Путь к CSV с заголовком (последний столбец — цель): "
                 ).strip()
-                x_train, y_train, x_test, y_test = manager.load_csv(path)
+                test_ratio = float(
+                    input("Доля тестовой выборки [0.2]: ").strip() or "0.2"
+                )
+                x_train, y_train, x_test, y_test = manager.load_csv(
+                    path, test_ratio=test_ratio
+                )
+                normalizer = {
+                    "minimum": manager.minimum.tolist(),
+                    "scale": manager.scale.tolist(),
+                }
                 print(
                     f"Загружено: обучение {len(x_train)} строк, "
                     f"тест {len(x_test)} строк, "
