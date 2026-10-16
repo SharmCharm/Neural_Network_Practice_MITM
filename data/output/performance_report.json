@@ -1,0 +1,23 @@
+{
+  "input_files": 8,
+  "images_processed_in_parallel": 8,
+  "augmented_images": 24,
+  "sequential_seconds": 0.036676,
+  "parallel_seconds": 0.351926,
+  "speedup": 0.104,
+  "threads": 2,
+  "processes": 2,
+  "sequential_array_shape": [
+    24,
+    64,
+    64,
+    3
+  ],
+  "parallel_array_shape": [
+    24,
+    64,
+    64,
+    3
+  ],
+  "output_file": "..\\data\\output\\augmented.npy"
+}
